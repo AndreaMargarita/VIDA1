@@ -3,6 +3,7 @@ package com.example.vida1;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
@@ -20,10 +21,26 @@ public class PaginaPrincipal extends AppCompatActivity {
         setContentView(R.layout.activity_pagina_principal);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         getSupportActionBar().hide();
+        findViewById(R.id.btnCrearParque).setOnClickListener(this::paginaCrearParque);
+        findViewById(R.id.btnVerParques).setOnClickListener(this::VerParquesPagina);
+        findViewById(R.id.btnVerPerfil).setOnClickListener(this::VerPerfilPagina);
 
         sharedPreferences = getSharedPreferences("sesiones",Context.MODE_PRIVATE);
         editor = sharedPreferences.edit();
 
+
+    }
+
+    private void VerPerfilPagina(View view) {
+        startActivity(new Intent(getApplicationContext(),PerfilUser.class));
+    }
+
+    private void VerParquesPagina(View view) {
+        startActivity(new Intent(getApplicationContext(),PantallaParques.class));
+    }
+
+    private void paginaCrearParque(View view) {
+        startActivity(new Intent(getApplicationContext(),CrearParque.class));
     }
 
     private void cerrarSesion(View view) {

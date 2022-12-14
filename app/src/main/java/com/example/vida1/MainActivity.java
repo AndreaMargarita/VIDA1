@@ -65,7 +65,6 @@ public class MainActivity extends AppCompatActivity {
     private void inicializarElementos() {
         sharedPreferences = this.getSharedPreferences("sesiones",Context.MODE_PRIVATE);
         editor= sharedPreferences.edit();
-
     }
 
     private void IniciarSesion(View view) {
@@ -77,7 +76,6 @@ public class MainActivity extends AppCompatActivity {
         editor.putBoolean(llave,checked);
         editor.putString("contraseña","615243");
         editor.apply();
-
     }
 
     private void irPaginaCrearCuenta(View view) {

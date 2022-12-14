@@ -14,7 +14,7 @@
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
-        android:background="@drawable/fondoimg2"
+        android:background="@drawable/fondoimg"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -35,8 +35,8 @@
                 android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="40dp"
-                android:layout_marginTop="30dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="60dp"
                 android:text="Bienvenid@! "
                 android:textColor="@color/white"
                 android:textSize="20dp" />
@@ -49,34 +49,34 @@
 
                 <ImageButton
                     android:id="@+id/imageView"
-                    android:layout_width="55dp"
+                    android:layout_width="100dp"
                     android:layout_height="80dp"
-                    android:layout_marginStart="105dp"
+                    android:layout_marginStart="70dp"
                     android:layout_marginTop="0dp"
                     android:layout_marginEnd="5dp"
                     android:background="@drawable/ic_baseline_person_24" />
 
                 <Button
+                    android:id="@+id/btnVerPerfil"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="-13dp"
                     android:layout_marginEnd="10dp"
-                    android:layout_marginStart="69dp"
+                    android:layout_marginStart="59dp"
                     android:backgroundTint="@color/purple_200"
-                    android:text="Ver perfil"
+                    android:text="Ver perfil."
                     android:textAlignment="center"
                     android:textColor="@color/white"
                     android:textSize="15dp"
                     app:cornerRadius="20dp" />
             </LinearLayout>
 
-
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="390dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="0dp"
+            android:layout_marginTop="30dp"
             android:orientation="vertical"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -94,18 +94,20 @@
                     android:id="@+id/imageView1"
                     android:layout_width="150dp"
                     android:layout_height="130dp"
-                    android:layout_marginStart="110dp"
+                    android:backgroundTint="#04FAE5"
+                    android:layout_marginStart="109dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="5dp"
                     android:layout_marginBottom="5dp"
                     android:background="@drawable/img4" />
 
                 <Button
+                    android:id="@+id/btnVerParques"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="115dp"
                     android:backgroundTint="#A25DE6"
-                    android:text="Mis parques"
+                    android:text="Mis parques."
                     android:textAlignment="center"
                     android:textColor="@color/white"
                     android:textSize="15dp"
@@ -127,16 +129,18 @@
                     android:layout_height="120dp"
                     android:layout_marginStart="100dp"
                     android:layout_marginTop="10dp"
+                    android:backgroundTint="#04FAE5"
                     android:layout_marginEnd="5dp"
                     android:layout_marginBottom="5dp"
                     android:background="@drawable/img2" />
 
                 <Button
+                    android:id="@+id/btnCrearParque"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="55dp"
                     android:backgroundTint="#068BD3"
-                    android:text="Crear un nuevo parque"
+                    android:text="Crear un nuevo parque."
                     android:textAlignment="center"
                     android:textColor="@color/white"
                     android:textSize="15dp"

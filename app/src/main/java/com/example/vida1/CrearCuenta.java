@@ -16,7 +16,6 @@ public class CrearCuenta extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_crear_cuenta);
         getSupportActionBar().hide();
-
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         findViewById(R.id.btnregresar).setOnClickListener(this::irPaginalogin);

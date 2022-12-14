@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondoimg5"
+    tools:context=".CrearParque">
+
+    <ImageButton
+        android:id="@+id/btnregresar"
+        android:layout_width="59dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/img5"
+        android:backgroundTint="#04FAE5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/fondoimg2"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="5dp"
+            android:text="Puedes modificar siguientes datos: "
+            android:textColor="@color/white"
+            android:textSize="23dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.06"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="335dp"
+        android:layout_height="520dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="20dp"
+        android:background="#940E2E7C"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout2">
+
+        <LinearLayout
+            android:id="@+id/parque3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/txtEditarNombreParque"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="10dp"
+                android:hint="Nombre:"
+                android:textColorHint="#FFFFFF"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/EditTextEditarNombreParque"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/edittextvista"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="15dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/parque1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/txtMedidalargo"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:hint="Medida de largo del terreno: "
+                android:textAlignment="center"
+                android:textColorHint="@color/white"
+                android:textSize="15dp"
+                app:layout_constraintTop_toBottomOf="@+id/formulario" />
+
+            <TextView
+                android:id="@+id/txtMedidaAncho"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:hint="Medida de Ancho del terreno"
+                android:textAlignment="center"
+                android:textColorHint="#EFF6F5"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtnewCorreo" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/parque4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <EditText
+                android:id="@+id/EditTextEditarLargoTerreno"
+                android:layout_width="140dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/edittextvista"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="15dp"
+                app:layout_constraintTop_toBottomOf="@+id/formulario" />
+
+            <EditText
+                android:id="@+id/EditTextEditarAnchoTerreno"
+                android:layout_width="140dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/edittextvista"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="15dp"
+                app:layout_constraintTop_toBottomOf="@+id/formulario" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/parque5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/txtCanIluminarias"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:hint="Cantidad total de iluminarias: "
+                android:textAlignment="center"
+                android:textColorHint="@color/white"
+                android:textSize="15dp"
+                app:layout_constraintTop_toBottomOf="@+id/formulario" />
+
+            <TextView
+                android:id="@+id/txtCanSensores"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:hint="Cantidad de sensores a utilizar:"
+                android:textAlignment="center"
+                android:textColorHint="#EFF6F5"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtnewCorreo" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/parque2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <EditText
+                android:id="@+id/EditTextEditarCanIluminarias"
+                android:layout_width="140dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/edittextvista"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="15dp"
+                app:layout_constraintTop_toBottomOf="@+id/formulario" />
+
+            <EditText
+                android:id="@+id/EditTextEditarCanSensores"
+                android:layout_width="140dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/edittextvista"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="15dp"
+                app:layout_constraintTop_toBottomOf="@+id/formulario" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/parque6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/txtReglas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:hint=" Reglas de tu parque:"
+                android:textColorHint="#FFFFFF"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/EditTextEditarReglasParque"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/edittextvista"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="15dp" />
+            <TextView
+                android:id="@+id/txtSensores"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:hint=" Sensores:"
+                android:textColorHint="#FFFFFF"
+                android:textSize="18dp" />
+
+            <LinearLayout
+                android:id="@+id/parque7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:id="@+id/EditarSensorHumedad1"
+                    android:text="Humedad"/>
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/EditarSensorTemperatura2"
+                    android:textColor="@color/white"
+                    android:text="Temperatura"/>
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/EditarSensorProximidad3"
+                    android:textColor="@color/white"
+                    android:text="Proximidad"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/parque8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <CheckBox
+                    android:layout_width="95dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:id="@+id/EditarSensorLuz4"
+                    android:text="Luz"/>
+                <CheckBox
+                    android:layout_width="113dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/EditarSensorQR5"
+                    android:textColor="@color/white"
+                    android:text="Qr/ tarjeta"/>
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/EditarSensorHumo6"
+                    android:textColor="@color/white"
+                    android:text="Humo"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnEditarParque"
+        android:layout_width="324dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#04FAE5"
+        android:text="Crear un nuevo Parque."
+        android:textColor="#673AB7"
+        android:textSize="19dp"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Editar Parque : "
+        android:textColor="@color/white"
+        android:textSize="23dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
