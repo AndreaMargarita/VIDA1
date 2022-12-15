@@ -83,27 +83,15 @@ public class ListaVisitas extends AppCompatActivity {
             @Override
             public void onResponse(JSONObject response) {
                 try {
-                    Toast.makeText(ListaVisitas.this, response.toString(), Toast.LENGTH_SHORT).show();
-                    String msg = "Informacion localizada";
-                    String respuesta = response.getString("msg");
-                    if(msg == respuesta){
-                        //Toast.makeText(ListaVisitas.this, response.toString(), Toast.LENGTH_SHORT).show();
-                        Gson gson = new Gson();
-                        ListaVisitante visilista = gson.fromJson(response.toString(), ListaVisitante.class);
-                        List<Visitante> mvisi = visilista.getData();
+                    Gson gson = new Gson();
+                    ListaVisitante visilista = gson.fromJson(response.toString(), ListaVisitante.class);
+                    List<Visitante> mvisi = visilista.getData();
 
-                        VisitanteAdapter adapter = new VisitanteAdapter(mvisi, ListaVisitas.this);
-                        rvVisitante.setAdapter(adapter);
-                        rvVisitante.setHasFixedSize(true);
-                        androidx.recyclerview.widget.RecyclerView.LayoutManager manager = new LinearLayoutManager(ListaVisitas.this);
-                        rvVisitante.setLayoutManager(manager);
-                    }else{
-                        Intent parque = getIntent();
-                        String id_parque = parque.getStringExtra("id_parque");
-                        Intent intent = new Intent(getApplicationContext(), CrearVisitante.class);
-                        intent.putExtra("id_parque", id_parque);
-                        startActivity(intent);
-                    }
+                    VisitanteAdapter adapter = new VisitanteAdapter(mvisi, ListaVisitas.this);
+                    rvVisitante.setAdapter(adapter);
+                    rvVisitante.setHasFixedSize(true);
+                    androidx.recyclerview.widget.RecyclerView.LayoutManager manager = new LinearLayoutManager(ListaVisitas.this);
+                    rvVisitante.setLayoutManager(manager);
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
